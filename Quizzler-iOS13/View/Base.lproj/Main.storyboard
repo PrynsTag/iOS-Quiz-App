@@ -27,45 +27,63 @@
                                 <rect key="frame" x="20" y="44" width="388" height="848"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-UQ-L60">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="73.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="55.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" systemColor="labelColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="0.0" y="83.666666666666686" width="388" height="564.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="65.333333333333343" width="388" height="492.66666666666663"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2L-Fb-uy0">
+                                        <rect key="frame" x="0.0" y="568" width="388" height="80"/>
+                                        <accessibility key="accessibilityConfiguration" label="True"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="24F-bb-BJ7"/>
+                                            <constraint firstAttribute="width" constant="388" id="Z0z-bf-dfr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Choice 1" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3UM-Jz-ciX"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
                                         <rect key="frame" x="0.0" y="658" width="388" height="80"/>
                                         <accessibility key="accessibilityConfiguration" label="True"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="388" id="cIv-U8-U4N"/>
                                             <constraint firstAttribute="height" constant="80" id="ueD-qr-2mT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="True" backgroundImage="Rectangle">
+                                        <state key="normal" title="Choice 2" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0X4-OF-vID"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1B-Sf-Ald"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlA-3Z-vgZ">
                                         <rect key="frame" x="0.0" y="748" width="388" height="80"/>
-                                        <accessibility key="accessibilityConfiguration" label="False"/>
+                                        <accessibility key="accessibilityConfiguration" label="True"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="fNm-VT-9Ox"/>
+                                            <constraint firstAttribute="height" constant="80" id="2TU-Cq-i3D"/>
+                                            <constraint firstAttribute="width" constant="388" id="b6k-Pi-MES"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="False" backgroundImage="Rectangle">
+                                        <state key="normal" title="Choice 3" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3MT-eg-iyh"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOk-qc-KSM"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-qh-7Xg">
@@ -79,6 +97,9 @@
                                         <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </progressView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="X2L-Fb-uy0" firstAttribute="top" secondItem="rSI-li-mhO" secondAttribute="bottom" constant="10" id="cBa-fu-mNT"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -94,11 +115,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="falseButton" destination="tbn-vQ-GyC" id="t5E-ZA-6xL"/>
+                        <outlet property="choiceOne" destination="X2L-Fb-uy0" id="UqV-Pj-kQv"/>
+                        <outlet property="choiceThree" destination="GlA-3Z-vgZ" id="pYo-NV-8IZ"/>
+                        <outlet property="choiceTwo" destination="oVw-Hl-IRe" id="ZK2-Hh-XCG"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="FKk-oU-KuK"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="3Wc-Ta-VKW"/>
                         <outlet property="scoreLabel" destination="3q2-UQ-L60" id="L1A-4O-s3G"/>
-                        <outlet property="trueButton" destination="oVw-Hl-IRe" id="a7N-8x-XUp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
